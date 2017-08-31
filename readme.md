@@ -16,7 +16,7 @@ if(class_exists('\Domatskiy\Angular'))
 
     function OnEpilogHandler()
     {
-        $angular = \Angular::getInstance();
+        $angular = \Domatskiy\Angular::getInstance();
         //$angular->setVendorJs(SITE_TEMPLATE_PATH."/js/angular.min.js"); // add in header vendor js
         $angular->setAppJs(SITE_TEMPLATE_PATH."/assets/app/app.min.js");
         $angular->addModule('<module_name>', '<module_path>');
@@ -32,7 +32,7 @@ in component_epilog.php
 ```php
 if(class_exists('\Domatskiy\Angular'))
 {
-	$angular = \Angular::getInstance();
+	$angular = \Domatskiy\Angular::getInstance();
 	$angular->setAppJs(<path_template_js>);
 	$angular->addModule('<module_name>', '<module_path>');
 }
