@@ -26,3 +26,14 @@ if(class_exists('\Domatskiy\Angular'))
 
 }
 ```
+
+in component_epilog.php 
+
+```php
+if(class_exists('\Domatskiy\Angular'))
+{
+	$angular = \Angular::getInstance();
+	$angular->setAppJs(<path_template_js>);
+	$angular->addModule('<module_name>', '<module_path>');
+}
+```
