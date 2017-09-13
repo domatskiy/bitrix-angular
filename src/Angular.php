@@ -17,7 +17,7 @@ class Angular
     protected $js = array();
 
     /**
-     * @var \Angular
+     * @var \Domatskiy\Angular
      */
     protected static $instance;
 
@@ -31,7 +31,7 @@ class Angular
      */
     public static function getInstance()
     {
-        if(!(static::$instance instanceof \Angular))
+        if(!(static::$instance instanceof \Domatskiy\Angular))
             static::$instance = new static();
 
         return static::$instance;
