@@ -20,7 +20,7 @@
             "type":"package",
             "package":{
                 "name":"domatskiy/bitrix-angular",
-                "version":"1.0.4",
+                "version":"1.0.5",
                 "source":{
                     "type":"git",
                     "url":"https://github.com/domatskiy/bitrix-angular",
@@ -29,7 +29,7 @@
             }
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": { "Domatskiy\\": "src/" }
         },
